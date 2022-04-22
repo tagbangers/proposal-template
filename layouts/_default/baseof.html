@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+  <body>
+    <main>
+      {{- block "main" . }}{{- end }}
+    </main>
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      mediumZoom('.markdown-body img.zoom')
+    });
+    </script>
+  </body>
+</html>

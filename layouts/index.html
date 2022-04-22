@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div class="document">
+    <aside>
+    {{ partial "toc.html" . }}
+    </aside>
+    <div class="content">
+      <div class="markdown-body">
+        {{ .Content }}
+      </div>
+      {{- partial "footer.html" . -}}
+    </div>
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded',a=>{mediumZoom('.markdown-body img')})
+  </script>
+{{ end }}

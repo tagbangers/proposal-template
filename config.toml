@@ -1,0 +1,17 @@
+# Replace base URL
+baseURL = 'http://example.org/'
+
+languageCode = 'ja-JP'
+
+# Replace Title
+title = 'My New Hugo Site'
+
+pygmentsUseClasses = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # enable inline html
+
+[params]
+author = "Tagbangers, Inc."

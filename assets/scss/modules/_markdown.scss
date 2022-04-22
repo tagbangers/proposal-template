@@ -1,0 +1,40 @@
+.markdown-body {
+
+  hr {
+    /* Reset the border of the <hr> separator, then set a better line */
+    border: 0;
+    border-bottom: 1px solid $cl-grey-lighter;
+    margin: $spacing * 2 auto;
+  }
+
+  h2 {
+    margin-top: $spacing * 8;
+  }
+
+  ol,
+  ul {
+    /* Replace the browser default padding */
+    padding-left: $spacing * 3.5;
+  }
+
+  li {
+    margin-top: $spacing / 2;
+  }
+
+  ul ul,
+  ol ul,
+  ul ol,
+  ol ol {
+    margin-bottom: 0;
+  }
+
+  img {
+    margin: auto;
+    display: block;
+  }
+
+  .footnotes {
+    margin-top: $spacing * 10;
+  }
+
+}

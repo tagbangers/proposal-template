@@ -1,0 +1,12 @@
+.global-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid $cl-grey-lighter;
+  padding: $spacing $spacing * 4;
+
+  .copyright {
+    font-size: $font-size-sm;
+    color: $cl-grey;
+  }
+}

@@ -1,0 +1,15 @@
+@media print {
+  .logo {
+    font-size: $font-size-xl;
+    width: 100% !important;
+    text-indent: 0 !important;
+  }
+
+  .content  {
+    left: 0 !important;
+  }
+
+  .toc {
+    display: none;
+  }
+}

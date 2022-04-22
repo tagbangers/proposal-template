@@ -1,0 +1,32 @@
+.toc {
+  overflow-y: auto;
+
+  nav {
+    padding: $spacing * 2;
+  }
+
+  nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: $spacing;
+
+
+    li {
+      padding: $spacing / 2 0;
+
+      a {
+        font-size: $font-size-base;
+        text-decoration: none;
+        line-height: 1;
+        color: $cl-black;
+      }
+
+      ul li a {
+        font-size: $font-size-sm;
+      }
+    }
+  }
+}
