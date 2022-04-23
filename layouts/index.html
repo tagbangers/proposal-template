@@ -1,16 +1,17 @@
 {{ define "main" }}
-  <div class="document">
-    <aside>
-    {{ partial "toc.html" . }}
-    </aside>
-    <div class="content">
-      <div class="markdown-body">
-        {{ .Content }}
+  <aside id="doc-index">
+  {{ partial "toc" . }}
+  </aside>
+  <div class="doc-content">
+    {{- partial "header" -}}
+    <div class="markdown-body">
+      <div class="container">
+      {{ .Content }}
       </div>
-      {{- partial "footer.html" . -}}
     </div>
+    {{- partial "footer" . -}}
   </div>
   <script>
-  document.addEventListener('DOMContentLoaded',a=>{mediumZoom('.markdown-body img')})
+  document.addEventListener('DOMContentLoaded',() => mediumZoom('.markdown-body img'))
   </script>
 {{ end }}

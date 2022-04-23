@@ -1,0 +1,16 @@
+.signature {
+  margin: $spacing 0 0 0;
+
+  .logo {
+    display: inline-block;
+    background-image: url("/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 16px;
+    width: 164px;
+    margin: 0 auto;
+    padding: 0;
+    text-indent: -9999px;
+  }
+}

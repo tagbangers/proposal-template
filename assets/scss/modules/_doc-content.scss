@@ -1,0 +1,11 @@
+.doc-content {
+  .markdown-body {
+    .container {
+      position: relative;
+      transition: left .3s ease;
+      margin: 0 auto;
+      padding: $spacing * 4 $spacing * 2;
+      max-width: 800px;
+    }
+  }
+}

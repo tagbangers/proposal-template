@@ -6,22 +6,25 @@
   }
 
   nav > ul > li > a {
-    font-weight: 600;
+    font-weight: 500;
   }
 
   ul {
     list-style: none;
     padding-left: $spacing;
 
-
     li {
       padding: $spacing / 2 0;
 
       a {
-        font-size: $font-size-base;
+        font-size: $font-size-sm;
         text-decoration: none;
         line-height: 1;
         color: $cl-black;
+      }
+
+      ul {
+        margin-bottom: 0;
       }
 
       ul li a {
@@ -29,4 +32,6 @@
       }
     }
   }
+
+
 }

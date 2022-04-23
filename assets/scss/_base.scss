@@ -4,40 +4,6 @@
 	padding: 0;
 }
 
-address,
-area,
-article,
-aside,
-audio,
-blockquote,
-datalist,
-details,
-dl,
-fieldset,
-figure,
-form,
-input,
-iframe,
-img,
-meter,
-nav,
-ol,
-optgroup,
-option,
-output,
-p,
-pre,
-progress,
-ruby,
-section,
-table,
-textarea,
-ul,
-video {
-	/* Margins for most elements */
-	margin-bottom: 1rem;
-}
-
 html,input,select,button {
 	/* Set body font family and some finicky elements */
 	font-family: $font-sans;
@@ -46,9 +12,11 @@ html,input,select,button {
 html {
   scroll-behavior: smooth;
   font-size: 100%; /** 16px */
+  height: 100%;
 }
 
 body {
+  height: 100%;
 	/* Center body in page */
 	margin: 0 auto;
 	overflow-x: hidden;
@@ -58,6 +26,7 @@ body {
 
 	font-weight: 400;
   line-height: 1.75;
+  color: $cl-black;
 }
 
 ::selection {
@@ -69,101 +38,3 @@ a {
   color: $cl-primary-blue;
 }
 
-table {
-	/* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
-	border-collapse: collapse;
-	width: 100%
-}
-
-td,
-th {
-	border: 1px solid $cl-grey-lighter;
-	text-align: left;
-	padding: .5rem;
-}
-
-th {
-	background: $cl-grey-lighter;
-}
-
-tr:nth-child(even) {
-	/* Set every other cell slightly darker. Improves readability. */
-	background: $cl-grey-lightest;
-}
-
-table caption {
-	font-weight: bold;
-	margin-bottom: .5rem;
-}
-
-blockquote {
-	padding: 1.5rem;
-	background: $cl-grey-lightest;
-	border-left: 5px solid $cl-grey-lighter;
-}
-
-abbr {
-	cursor: help;
-}
-
-blockquote *:last-child {
-	padding-bottom: 0;
-	margin-bottom: 0;
-}
-
-code,
-pre,
-kbd,
-samp {
-	/* Set the font family for monospaced elements */
-	font-family: $font-mono;
-}
-
-code,
-samp,
-kbd,
-pre {
-	/* The main preformatted style. This is changed slightly across different cases. */
-	background: $cl-grey-lightest;
-	border: 1px solid $cl-grey-lighter;
-	border-radius: 4px;
-	padding: 3px 6px;
-	/* ↓ font-size is relative to containing element, so it scales for titles*/
-	font-size: 0.9em;
-}
-
-kbd {
-	/* Makes the kbd element look like a keyboard key */
-	border-bottom: 3px solid $cl-grey-lighter;
-}
-
-pre {
-	padding: 1rem 1.4rem;
-	max-width: 100%;
-	overflow: auto;
-}
-
-pre code {
-	/* When <code> is in a <pre>, reset it's formatting to blend in */
-	background: inherit;
-	font-size: inherit;
-	color: inherit;
-	border: 0;
-	padding: 0;
-	margin: 0;
-}
-
-code pre {
-	/* When <pre> is in a <code>, reset it's formatting to blend in */
-	display: inline;
-	background: inherit;
-	font-size: inherit;
-	color: inherit;
-	border: 0;
-	padding: 0;
-	margin: 0;
-}
-
-img {
-	max-width: 100%;
-}

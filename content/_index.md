@@ -93,10 +93,10 @@ Syntax highlighting
 
 ```js
 var foo = function (bar) {
-  return bar++;
-};
+  return bar++
+}
 
-console.log(foo(5));
+console.log(foo(5))
 ```
 
 ## Tables
@@ -119,7 +119,7 @@ Right aligned columns
 
 [link text](http://dev.nodeca.com)
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+[link with title](http://nodeca.github.io/pica/demo/ 'title text!')
 
 ### Footnotes
 
@@ -134,7 +134,7 @@ Duplicated footnote reference[^second].
 ## Images
 
 ![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg 'The Stormtroopocat')
 
 Like links, Images also have a footnote style syntax
 
@@ -144,7 +144,7 @@ Like links, Images also have a footnote style syntax
 
 With a reference later in the document defining the URL location:
 
-[id]: https://octodex.github.com/images/dojocat.jpg "The Dojocat"
+[id]: https://octodex.github.com/images/dojocat.jpg 'The Dojocat'
 
 [^first]: Footnote **can have markup**
 

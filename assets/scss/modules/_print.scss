@@ -1,15 +1,22 @@
 @media print {
   .logo {
     font-size: $font-size-xl;
+    font-weight: bold;
+    line-height: 1;
     width: 100% !important;
     text-indent: 0 !important;
+    background: none !important;
   }
 
-  .content  {
+  #nav-switch {
+    display: none !important;
+  }
+
+  .doc-content  {
     left: 0 !important;
   }
 
-  .toc {
-    display: none;
+  #doc-index {
+    display: none !important;
   }
 }

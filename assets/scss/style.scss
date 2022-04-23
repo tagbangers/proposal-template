@@ -3,13 +3,17 @@
 @import "./base";
 @import "./typography";
 
+@import "./mixins/media-query";
+
 @import "./modules/print";
 
-@import "./modules/header";
+@import "./modules/signature";
 @import "./modules/footer";
 
-@import "./modules/document";
+@import "./modules/layout";
 @import "./modules/toc";
+@import "./modules/doc-content";
+@import "./modules/header";
 @import "./modules/markdown";
 
-@import "./modules/to-top";
+@import "./modules/nav-switch";

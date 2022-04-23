@@ -12,16 +12,38 @@ $font-size-xs: 0.64rem;
 
 $HEADER_HEIGHT: 50px;
 
-$cl-black: #1A1A1A;
-$cl-white: #FFFFFF;
+$spacing: 0.5rem;
 
-$cl-grey-lightest: #F6F8FA;
-$cl-grey-lighter: #E5E7EB;
-$cl-grey-light: #c4c6c9;
-$cl-grey: #9ea0a2;
+// color palette
+$gunmetal: #223843;
+$flord: #465C68;
+$slate-gray: #6C838F;
+$hit-gray: #ADB5BD;
+$athens-gray: #E9ECEF;
+$athens-gray-light: #F8F9FA;
+
+$white: #fff;
+
+$cl-black: $gunmetal;
+$cl-white: $white;
+
+// gray shades
+$cl-gray-500: $gunmetal;
+$cl-gray-400: $flord;
+$cl-gray-300: $slate-gray;
+$cl-gray-200: $hit-gray;
+$cl-gray-100: $athens-gray;
+$cl-gray-50: $athens-gray-light;
 
 $cl-primary-blue: #0070F3;
-
 $cl-highlight: #fff785;
 
-$spacing: 0.5rem;
+// utils
+$cl-border: $cl-gray-100;
+
+$breakpoints: (
+    "sm": "screen and (min-width: 400px)",
+    "md": "screen and (min-width: 768px)",
+    "lg": "screen and (min-width: 1024px)",
+    "xl": "screen and (min-width: 1200px)",
+) !default;

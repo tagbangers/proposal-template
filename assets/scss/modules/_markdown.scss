@@ -3,7 +3,7 @@
   hr {
     /* Reset the border of the <hr> separator, then set a better line */
     border: 0;
-    border-bottom: 1px solid $cl-grey-lighter;
+    border-bottom: 1px solid $cl-border;
     margin: $spacing * 2 auto;
   }
 
@@ -28,6 +28,107 @@
     margin-bottom: 0;
   }
 
+  table {
+    /* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
+    border-collapse: collapse;
+    width: 100%
+  }
+
+  td,
+  th {
+    border: 1px solid $cl-gray-100;
+    text-align: left;
+    padding: .5rem;
+  }
+
+  th {
+    background: $cl-gray-100;
+  }
+
+  tr:nth-child(even) {
+    /* Set every other cell slightly darker. Improves readability. */
+    background: $cl-gray-100;
+  }
+
+  table caption {
+    font-weight: bold;
+    margin-bottom: .5rem;
+  }
+
+  blockquote {
+    padding: 1.5rem;
+    background: $cl-gray-100;
+    border-left: 5px solid $cl-gray-200;
+  }
+
+  abbr {
+    cursor: help;
+  }
+
+  blockquote *:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  code,
+  pre,
+  kbd,
+  samp {
+    /* Set the font family for monospaced elements */
+    font-family: $font-mono;
+  }
+
+  code,
+  samp,
+  kbd,
+  pre {
+    /* The main preformatted style. This is changed slightly across different cases. */
+    background: $cl-gray-100;
+    border: 1px solid $cl-border;
+    border-radius: 4px;
+    padding: 3px 6px;
+    /* ↓ font-size is relative to containing element, so it scales for titles*/
+    font-size: 0.9em;
+  }
+
+
+
+  kbd {
+    /* Makes the kbd element look like a keyboard key */
+    border-bottom: 3px solid $cl-border;
+  }
+  
+  pre {
+    padding: 1rem 1.4rem;
+    max-width: 100%;
+    overflow: auto;
+  }
+  
+  pre code {
+    /* When <code> is in a <pre>, reset it's formatting to blend in */
+    background: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  code pre {
+    /* When <pre> is in a <code>, reset it's formatting to blend in */
+    display: inline;
+    background: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
   img {
     margin: auto;
     display: block;
@@ -35,6 +136,11 @@
 
   .footnotes {
     margin-top: $spacing * 10;
+
+    ol li {
+      color: $cl-gray-400;
+      margin-bottom: $spacing * 2;
+    }
   }
 
 }
