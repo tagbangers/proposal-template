@@ -5,10 +5,6 @@
     padding: $spacing * 2;
   }
 
-  nav > ul > li > a {
-    font-weight: 500;
-  }
-
   ul {
     list-style: none;
     padding-left: $spacing;
@@ -19,7 +15,9 @@
       a {
         font-size: $font-size-sm;
         text-decoration: none;
-        line-height: 1;
+        font-weight: 500;
+        line-height: 1.4;
+        display: inline-block;
         color: $cl-black;
       }
 
@@ -29,6 +27,7 @@
 
       ul li a {
         font-size: $font-size-sm;
+        font-weight: 400;
       }
     }
   }

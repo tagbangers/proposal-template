@@ -1,5 +1,5 @@
-const $main = $('main')
+const $main = $("main");
 
-$('#nav-switch').on('click', () => {
-  $main.toggleClass('with-index')
-})
+$("#nav-switch").on("click", () => {
+  $main.toggleClass("with-index");
+});

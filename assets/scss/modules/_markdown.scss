@@ -1,4 +1,5 @@
 .markdown-body {
+  line-height: 1.6;
 
   hr {
     /* Reset the border of the <hr> separator, then set a better line */
@@ -9,6 +10,14 @@
 
   h2 {
     margin-top: $spacing * 8;
+  }
+
+  h3, h4, h5 {
+    margin-top: $spacing * 5;
+  }
+
+  p {
+    margin-bottom: 1rem;
   }
 
   ol,
@@ -31,7 +40,8 @@
   table {
     /* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
     border-collapse: collapse;
-    width: 100%
+    width: 100%;
+    margin: $spacing * 3 auto;
   }
 
   td,
@@ -42,12 +52,12 @@
   }
 
   th {
-    background: $cl-gray-100;
+    background: $cl-gray-50;
   }
 
   tr:nth-child(even) {
     /* Set every other cell slightly darker. Improves readability. */
-    background: $cl-gray-100;
+    background: $cl-gray-50;
   }
 
   table caption {
@@ -127,10 +137,7 @@
   
   img {
     max-width: 100%;
-  }
-
-  img {
-    margin: auto;
+    margin: $spacing * 8 auto;
     display: block;
   }
 
